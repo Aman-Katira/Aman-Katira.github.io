@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 250px;
+            height: 100%;
+            background-color: #2e3b4e;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .sidebar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .sidebar h1 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .sidebar nav {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .sidebar nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .sidebar nav a:hover {
+            background-color: #4a657a;
+        }
+
+        /* Main Content */
+        .main-content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        .main-content .section {
+            margin-bottom: 40px;
+        }
+
+        .main-content h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .intro {
+            background: url('background.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 50px;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+        }
+
+        .publications, .about, .contact {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact a {
+            color: #2e3b4e;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <img src="your-photo.jpg" alt="Your Photo">
+        <h1>Your Name</h1>
+        <p>Graduate Student</p>
+        <nav>
+            <a href="#intro">Intro</a>
+            <a href="#publications">Publications</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div id="intro" class="section intro">
+            <h2>Hey! I'm [Your Name],</h2>
+            <p>a PhD student at [Your University].</p>
+            <p>My research interests lie in [research focus]. I run [specific tools/methods] to study [topics of interest].</p>
+        </div>
+
+        <div id="publications" class="section publications">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>1st Author Papers:</strong> [Details of publications]</li>
+                <li><strong>Co-Author Papers:</strong> [Details of publications]</li>
+            </ul>
+        </div>
+
+        <div id="about" class="section about">
+            <h2>About Me</h2>
+            <p>[Write about your journey, research interests, and hobbies.]</p>
+        </div>
+
+        <div id="contact" class="section contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">Your LinkedIn</a></p>
+        </div>
+    </div>
+</body>
+</html>
